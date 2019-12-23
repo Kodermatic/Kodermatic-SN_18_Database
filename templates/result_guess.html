@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rezultat ugibanja</title>
+</head>
+<body>
+  <h1>Odgovor na ugibanje je</h1>
+  <h3>{{ message }}</h3>
+  
+  {% if guessed %}
+  <a href="/reset">Izberi novo skrito število</a>
+  {% else %}
+  <a href="/">Ponovno ugibaj</a>
+  {% endif %}
+</body>
+</html>
