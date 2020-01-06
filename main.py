@@ -80,7 +80,6 @@ def login_post():
   print(password)
   number = randint(0, 10)
   print(number)
-  
   user = db.query(User).filter_by(email=email).first()
   
   if user is not None:
